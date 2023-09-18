@@ -20,9 +20,9 @@ public class Animal {
 	public Animal() {		
 	}
 	
-	public static String totalPor Tipo() {
-		return("Mamiferos: "+   +"\n"+"Aves: "+   +"\n"+"Peces: "+   +"\n"+"Reptiles: "+   +"\n"+"Anfibios: "+   +"\n"
-				)
+	public static String totalPorTipo() {
+		return("Mamiferos: "+Mamifero.cantidadMamiferos()+"\n"+"Aves: "+Aves.cantidadAves()+"\n"+"Peces: "+Pez.cantidadPeces()+"\n"+"Reptiles: "
+				+Reptil.cantidadReptiles()+"\n"+"Anfibios: "+Anfibio.cantidadAnfibios()+"\n")
 	}
 	
 	public String toString() {
