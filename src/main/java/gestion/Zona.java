@@ -14,6 +14,15 @@ public class Zona {
 	}
 	
 	public Zona() {
+		
+	}
+	
+	public void agregarAnimales(Animal animal) {
+		this.animales.add(animal);
+	}
+	
+	public int cantidadAnimales() {
+		return animales.size();
 	}
 	
 }
