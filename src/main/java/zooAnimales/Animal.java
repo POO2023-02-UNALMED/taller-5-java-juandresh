@@ -1,5 +1,5 @@
 package zooAnimales;
-import gestion,*;
+import gestion.*;
 
 public class Animal {
 	private int totalAnimales;
