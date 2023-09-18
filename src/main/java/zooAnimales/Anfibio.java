@@ -25,8 +25,8 @@ public class Anfibio extends Animal {
 		return "saltar";
 	}
 	
-	public int cantidadAnfibios() {
-		return listado.size();
+	public static int cantidadAnfibios() {
+		return (listado.size());
 	}
 	
 	public static Anfibio crearRana(String nombre, int edad, String genero) {

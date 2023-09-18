@@ -25,8 +25,8 @@ public class Pez extends Animal {
 		return "nadar";
 	}
 	
-	public int cantidadPeces() {
-		return listado.size();
+	public static int cantidadPeces() {
+		return (listado.size());
 	}
 	
 	public static Pez crearSalmon(String nombre, int edad, String genero) {

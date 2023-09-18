@@ -23,8 +23,8 @@ public class Ave extends Animal {
 		return "volar";
 	}
 	
-	public int cantidadAves() {
-		return listado.size();
+	public static int cantidadAves() {
+		return (listado.size());
 	}
 	
 	public static Ave crearHalcon(String nombre, int edad, String genero) {
