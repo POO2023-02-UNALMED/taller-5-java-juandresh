@@ -38,4 +38,44 @@ public class Anfibio extends Animal {
 		salamandras+=1;
 		return new Anfibio (nombre, edad, "selva", genero, "negro y amarillo", false);
 	}
+	
+	public void setRanas(int ranas) {
+	    this.ranas = ranas;
+	}
+	
+	public int getRanas(){
+	    return this.ranas;
+	}
+	
+	public void setSalamandras(int salamandras) {
+	    this.salamandras = salamandras;
+	}
+	
+	public int getSalamandras(){
+	    return this.salamandras;
+	}
+	
+	public void setColorPiel(String colorPiel) {
+		this.colorPiel=colorPiel;
+	}
+	
+	public String getColorPiel(){
+		return this.colorPiel;
+	}
+	
+	public void setVenenoso(boolean venenoso){
+	    this.venenoso = venenoso;
+	}
+	
+	public boolean getVenenoso(){
+	    return this.venenoso;
+	}
+	
+	public void setListado(List<Anfibio> listado) {
+		this.listado=listado;
+	}
+	
+	public List<Anfibio> getListado() {
+		return this.listado;
+	}
 }

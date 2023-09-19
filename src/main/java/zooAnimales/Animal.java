@@ -21,7 +21,8 @@ public class Animal {
 	}
 	
 	public static String totalPorTipo() {
-		return("Mamiferos: "+Mamifero.cantidadMamiferos()+"\n"+"Aves: "+Ave.cantidadAves()+"\n"+"Peces: "+Pez.cantidadPeces()+"\n"+"Reptiles: "+Reptil.cantidadReptiles()+"\n"+"Anfibios: "+Anfibio.cantidadAnfibios()+"\n");
+		return("Mamiferos: "+Mamifero.cantidadMamiferos()+"\n"+"Aves: "+Ave.cantidadAves()+"\n"+"Peces: "+Pez.cantidadPeces()+"\n"+"Reptiles: "
+				+Reptil.cantidadReptiles()+"\n"+"Anfibios: "+Anfibio.cantidadAnfibios()+"\n");
 	}
 	
 	public String toString() {
@@ -29,11 +30,51 @@ public class Animal {
 			return("Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero);
 		}
 		else
-			return("Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero+", la zona en la que me ubico es "+this.getZona().getNombre()+", en el zoo "+this.zona.getZoo().getNombre());
+			return("Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero+
+					", la zona en la que me ubico es "+this.getZona().getNombre()+", en el zoo "+this.zona.getZoo().getNombre());
 	}
 	
 	public String movimiento() {
 		return "desplazarse";
 	}
 	
+	public void setTotalAnimales(int totalAnimales) {
+		this.totalAnimales=totalAnimales;
+	}
+	
+	public int getTotalAnimales(){
+		return this.totalAnimales;
+	}
+	
+	public void setNombre(String nombre) {
+		this.nombre=nombre;
+	}
+	
+	public String getNombre(){
+		return this.nombre;
+	}
+	
+	public void setEdad(int edad) {
+		this.edad=edad;
+	}
+	
+	public int getEdad() {
+		return this.edad;
+	}
+	
+	public void setHabitat(String habitat) {
+		this.habitat=habitat;
+	}
+	
+	public String getHabitat(){
+		return this.habitat;
+	}
+	
+	public void setGenero(String genero) {
+		this.genero=genero;
+	}
+	
+	public String getGenero(){
+		return this.genero;
+	}
 }
